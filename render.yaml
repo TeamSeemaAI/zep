@@ -21,6 +21,7 @@ services:
           property: hostport
       - key: ZEP_OPENAI_API_KEY
         sync: false
+    region: frankfurt
     plan: free
   - type: web
     name: zep-nlp
@@ -28,6 +29,7 @@ services:
     env: image
     image:
       url: ghcr.io/getzep/zep-nlp-server:latest
+    region: frankfurt
     plan: free
 
 databases:
@@ -35,4 +37,5 @@ databases:
     databaseName: zep
     postgresMajorVersion: 15
     ipAllowList: [] # only allow internal connections
+    region: frankfurt
     plan: free
