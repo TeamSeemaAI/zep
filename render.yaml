@@ -21,7 +21,7 @@ services:
           property: hostport
       - key: ZEP_OPENAI_API_KEY
         sync: false
-  - type: pserv
+  - type: web
     name: zep-nlp
     autoDeploy: false
     env: image
@@ -33,3 +33,4 @@ databases:
     databaseName: zep
     postgresMajorVersion: 15
     ipAllowList: [] # only allow internal connections
+    plan: free
