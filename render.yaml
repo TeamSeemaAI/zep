@@ -17,7 +17,7 @@ services:
       - key: ZEP_NLP_SERVER_HOSTPORT
         fromService:
           name: zep-nlp
-          type: pserv
+          type: web
           property: hostport
       - key: ZEP_OPENAI_API_KEY
         sync: false
