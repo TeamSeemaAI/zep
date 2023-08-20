@@ -21,12 +21,14 @@ services:
           property: hostport
       - key: ZEP_OPENAI_API_KEY
         sync: false
+    plan: free
   - type: web
     name: zep-nlp
     autoDeploy: false
     env: image
     image:
       url: ghcr.io/getzep/zep-nlp-server:latest
+    plan: free
 
 databases:
   - name: zep-postgres
